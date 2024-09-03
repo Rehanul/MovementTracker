@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Need Help..?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#F1F1F1"
+        android:text="Main Menu\n
+you can choose an option or a task from here
+Like you can start the monitoring, change Settings, help, View Data, define user bounds etc..
+" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#F1F1F1"
+        android:text="Define Boundary\n
+you can define a Starting point and from that point a boundary (in meters). 
+you define the range in meters and you can click on the map to choose the starting point.
+When the user exits this defined region a message is sent to the provided contact number
+" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#F1F1F1"
+        android:text="Show Path\n
+You can view the previous monitored data on a map. The map shows places (markers) where the user has been and when along with his motion status
+uyo can also clear the previous data if you dont need it anymore
+" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="80"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:text="" />
+
+            <Button
+                android:id="@+id/buttonShowPath"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_above="@+id/textView"
+                android:layout_toRightOf="@+id/textView"
+                android:background="@drawable/customshowpath" />
+
+            <Button
+                android:id="@+id/buttonSettings"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/textView"
+                android:layout_toLeftOf="@+id/textView"
+                android:background="@drawable/customsettings" />
+
+            <Button
+                android:id="@+id/buttonHelp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/textView"
+                android:layout_toRightOf="@+id/textView"
+                android:background="@drawable/customhelp" />
+
+            <Button
+                android:id="@+id/buttonDefineRegion"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_above="@+id/textView"
+                android:layout_toLeftOf="@+id/textView"
+                android:background="@drawable/customdefineregion" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/customtogglebutton"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>
